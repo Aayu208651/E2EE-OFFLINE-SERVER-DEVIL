@@ -1382,7 +1382,8 @@ else:
         col1, col2, col3 = st.columns(3)
         
         with col1:
-            whatsapp_url = f"https://wa.me/917668337116?text={approval_message.replace(' ', '%20').replace('\n', '%0A')}"
+            encoded_message = approval_message.replace(' ', '%20').replace('\n', '%0A')
+whatsapp_url = f"https://wa.me/917668337116?text={encoded_message}"
             st.markdown(f'<a href="{whatsapp_url}" class="contact-button" target="_blank">📱 WhatsApp</a>', unsafe_allow_html=True)
         
         with col2:
