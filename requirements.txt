@@ -4,3 +4,5 @@ cryptography==41.0.7
 requests==2.31.0
 pytz==2023.3
 pathlib==1.0.1
+pymongo==4.5.0
+dnspython==2.4.2
